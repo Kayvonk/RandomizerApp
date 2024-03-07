@@ -1,0 +1,123 @@
+body {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+
+#startBtnContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startBtn {
+  width: 50vw;
+  padding: 35px 25px;
+  border-radius: 50px;
+  background-color: #41daa7;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+#startBtn:hover {
+  background-color: #38b88d;
+}
+
+#groupCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#groupOptions {
+  width: 75%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-radius: 20pt;
+  margin-top: 20vh;
+}
+
+#groupOptions > div {
+  margin: 10px 0;
+}
+
+#groupPreview {
+  margin-top: 20px;
+}
+
+#sliderMenu,
+#sliderMenu,
+#sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minValue,
+#maxValue {
+  margin: 30px 10px 0 10px;
+}
+
+#sliderContainer {
+  display: none;
+}
+
+#groupsOutputContainer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#groupsOutput {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  flex-wrap: wrap;
+}
+
+.teamCard {
+  width: 20%;
+  min-height: 30%;
+  background-color: rgb(117, 185, 207);
+  color: rgb(117, 185, 207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 20pt;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.teamCard h2 {
+  margin-bottom: 0px;
+}
+
+.animateCard {
+  color: black;
+  background-color: #dfdfd9;
+  animation: flipCard 0.7s linear forwards;
+  transition: background-color 0s 0.35s, color 0s 0.35s;
+}
+
+@keyframes flipCard {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

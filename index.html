@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section id="groupOptions">
+      <div id="totalStudentCount"></div>
+      <div>
+        <label for="groupSizeInput">Target group size:</label>
+        <select id="groupSizeInput" selected>
+          <option selected hidden>Select</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div id="groupCountContainer">
+        <div id="groupDetails"></div>
+        <div id="groupCount"></div>
+
+        <div id="sliderContainer">
+          <div id="sliderValue"></div>
+          <div id="sliderMenu">
+            <div id="minValue"></div>
+            <input id="sliderInput" type="range" min="1" max="25" value="10" />
+            <div id="maxValue"></div>
+          </div>
+        </div>
+        <div id="groupPreview"></div>
+      </div>
+    </section>
+    <section id="startBtnContainer">
+      <button id="startBtn" disabled>Randomize</button>
+    </section>
+    <section id="groupsOutputContainer">
+      <div id="groupsOutput"></div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
