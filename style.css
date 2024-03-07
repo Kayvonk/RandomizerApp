@@ -89,6 +89,7 @@ body {
 
 .teamCard {
   width: 20%;
+  height: fit-content;
   min-height: 30%;
   background-color: rgb(117, 185, 207);
   color: rgb(117, 185, 207);
